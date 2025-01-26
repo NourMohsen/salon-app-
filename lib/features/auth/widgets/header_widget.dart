@@ -16,7 +16,7 @@ class HeaderWidget extends StatelessWidget {
           Text(title,style: AppTextStyle.titleLarge22.copyWith(
               fontWeight: AppFontWeight.semiBoldW600,
               fontSize: AppFontSize.sp24.responsiveFontSize,
-              color: context.watch<GlobalCubit>().isDarkTheme() ? AppColors.white : AppColors.textColor ),),
+              color: context.watch<GlobalCubit>().isDarkTheme() ? AppColors.white : AppColors.blackTextColor ),),
         ],
       ),
     );

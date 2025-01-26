@@ -45,14 +45,14 @@ class _VerificationScreenState extends State<VerificationScreen> {
                     TextSpan(
                     text: " ${widget.phoneNumber} ",
                       style: AppTextStyle().w700.bodyLarge16.copyWith(
-                          color: context.watch<GlobalCubit>().isDarkTheme()? AppColors.white : AppColors.textColor
+                          color: context.watch<GlobalCubit>().isDarkTheme()? AppColors.white : AppColors.blackTextColor
                       ),
                   ),
                   TextSpan(
                     text: LocaleKeys.edit.tr(),
                       style: AppTextStyle().bodyMedium14.copyWith(
                         fontWeight: AppFontWeight.boldW700,
-                          color: context.watch<GlobalCubit>().isDarkTheme()? AppColors.white : AppColors.textColor,
+                          color: context.watch<GlobalCubit>().isDarkTheme()? AppColors.white : AppColors.blackTextColor,
                           decoration: TextDecoration.underline
                       ),
                      recognizer: TapGestureRecognizer()..onTap=(){
@@ -78,7 +78,7 @@ class _VerificationScreenState extends State<VerificationScreen> {
                       Text(
                         "${LocaleKeys.didNotGetCode.tr()} ",
                         style: AppTextStyle().w500.bodyMedium14.copyWith(
-                          color: context.watch<GlobalCubit>().isDarkTheme()? AppColors.white : AppColors.textColor,
+                          color: context.watch<GlobalCubit>().isDarkTheme()? AppColors.white : AppColors.blackTextColor,
                         ),
                       ),
                       if (!reSend)
@@ -104,7 +104,7 @@ class _VerificationScreenState extends State<VerificationScreen> {
                         child: Text(
                           "${LocaleKeys.resend.tr()} ",
                           style: AppTextStyle().bodyMedium14.copyWith(
-                              color: context.watch<GlobalCubit>().isDarkTheme()? AppColors.white : AppColors.textColor,
+                              color: context.watch<GlobalCubit>().isDarkTheme()? AppColors.white : AppColors.blackTextColor,
                               fontWeight: AppFontWeight.boldW700,
                               decoration: TextDecoration.underline
                           ),
@@ -132,10 +132,8 @@ class _VerificationScreenState extends State<VerificationScreen> {
                 listener: (context, state) {
                   if(state.isActiveAccountLoaded){
                     if(state.isFirstLogin ?? true){
-                      RouteManager.rPopRoute(context);
-                      RouteManager.rPushNamed(context: context, rName: AppRoutesNames.rRegisterScreen);
+                      RouteManager.rPushReplacementNamed(context: context, rName: AppRoutesNames.rRegisterScreen);
                     }else{
-                      RouteManager.rPopRoute(context);
                       RouteManager.rPushNamedAndRemoveUntil(context: context, rName: AppRoutesNames.rHomeScreen);
                     }
                   }

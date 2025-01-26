@@ -14,7 +14,7 @@ abstract class AppColors {
   static const  Color dividerColor =  Color(0xFFF1F1F1);
 
   ///text color
-  static const Color textColor = Color(0xFF000000);
+  static const Color blackTextColor = Color(0xFF000000);
 
 
   ///situation color

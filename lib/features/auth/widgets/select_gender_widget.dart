@@ -14,7 +14,7 @@ class SelectGenderWidget extends StatelessWidget {
           cubit.selectGender(value!);
         },),
         Text(LocaleKeys.male.tr(),style: AppTextStyle.bodyMedium14.copyWith(
-            color: context.watch<GlobalCubit>().isDarkTheme()? AppColors.white : AppColors.textColor,
+            color: context.watch<GlobalCubit>().isDarkTheme()? AppColors.white : AppColors.blackTextColor,
             fontWeight: AppFontWeight.regular2W500),),
         AppSize.s82.sizedBoxWidth,
         Radio(
@@ -23,7 +23,7 @@ class SelectGenderWidget extends StatelessWidget {
           cubit.selectGender(value!);
         },),
         Text(LocaleKeys.female.tr(),style: AppTextStyle.bodyMedium14.copyWith(
-            color: context.watch<GlobalCubit>().isDarkTheme()? AppColors.white : AppColors.textColor,
+            color: context.watch<GlobalCubit>().isDarkTheme()? AppColors.white : AppColors.blackTextColor,
             fontWeight: AppFontWeight.regular2W500),),
       ],);
     },);

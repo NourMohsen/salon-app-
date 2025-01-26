@@ -48,7 +48,7 @@ class _TimerToResendState extends State<TimerToResend> {
     return Text(
       ' $_secondsRemaining',
       style: AppTextStyle().w700.bodyMedium14.copyWith(
-        color: context.watch<GlobalCubit>().isDarkTheme()? AppColors.white : AppColors.textColor,
+        color: context.watch<GlobalCubit>().isDarkTheme()? AppColors.white : AppColors.blackTextColor,
       ),
     );
   }

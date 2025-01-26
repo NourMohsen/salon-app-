@@ -150,7 +150,7 @@ class _CompleteRegisterScreenState extends State<CompleteRegisterScreen> {
                 },
                 listener: (context, state) {
                 if(state.isCompleteRegisterLoaded){
-                  RouteManager.rPushNamed(context: context, rName:AppRoutesNames.rHomeScreen);
+                  RouteManager.rPushNamedAndRemoveUntil(context: context, rName:AppRoutesNames.rHomeScreen);
                 }
                 if(state.isError){
                   RouteManager.rPopRoute(context);

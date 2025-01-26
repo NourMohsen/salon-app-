@@ -20,7 +20,7 @@ class SalonDetailsCard extends StatelessWidget {
                 child: Text(
                   salonDetails.name ?? "",
                   style: AppTextStyle().titleSmall18.copyWith(
-                    color: context.watch<GlobalCubit>().isDarkTheme() ? AppColors.white : AppColors.textColor,
+                    color: context.watch<GlobalCubit>().isDarkTheme() ? AppColors.white : AppColors.blackTextColor,
                     fontSize: AppFontSize.sp20.responsiveFontSize,
                     fontWeight: FontWeight.w700,
                   ),
@@ -31,7 +31,7 @@ class SalonDetailsCard extends StatelessWidget {
               Text(
                 salonDetails.rateAvg ?? "0",
                 style: AppTextStyle.bodySmall12.copyWith(
-                  color: context.watch<GlobalCubit>().isDarkTheme() ? AppColors.white : AppColors.textColor,
+                  color: context.watch<GlobalCubit>().isDarkTheme() ? AppColors.white : AppColors.blackTextColor,
 
                   fontWeight: FontWeight.w500,
                 ),
@@ -73,7 +73,7 @@ class SalonDetailsCard extends StatelessWidget {
                     TextSpan(
                       text: ' ${salonDetails.providers?.length ?? 0} ${LocaleKeys.specializedBarbers.tr()}',
                       style: AppTextStyle.bodySmall12.copyWith(
-                        color: context.watch<GlobalCubit>().isDarkTheme() ? AppColors.white : AppColors.textColor,
+                        color: context.watch<GlobalCubit>().isDarkTheme() ? AppColors.white : AppColors.blackTextColor,
                         fontWeight: FontWeight.w500,
                       ),
                     ),
@@ -113,7 +113,7 @@ class SalonDetailsCard extends StatelessWidget {
                     TextSpan(
                       text: ' - ${(salonDetails.isOpen ?? false) ? salonDetails.timeClose ?? "" : salonDetails.timeOpen ?? ""}',
                       style: AppTextStyle.bodySmall12.copyWith(
-                        color: context.watch<GlobalCubit>().isDarkTheme() ? AppColors.white : AppColors.textColor,
+                        color: context.watch<GlobalCubit>().isDarkTheme() ? AppColors.white : AppColors.blackTextColor,
                         fontWeight: FontWeight.w500,
                       ),
                     ),

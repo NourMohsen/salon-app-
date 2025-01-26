@@ -41,7 +41,7 @@ class _LoginScreenState extends State<LoginScreen> {
               AppSize.s48.sizedBoxHeight,
               Text(LocaleKeys.phoneNumber.tr(),
                 style: AppTextStyle().w400.bodyLarge16.copyWith(
-                  color: context.watch<GlobalCubit>().isDarkTheme() ? AppColors.white : AppColors.textColor,
+                  color: context.watch<GlobalCubit>().isDarkTheme() ? AppColors.white : AppColors.blackTextColor,
                 )),
               AppSize.s16.sizedBoxHeight,
               Form(
@@ -67,7 +67,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         '+966',
                         style: AppTextStyle().bodySmall12.copyWith(
                           fontWeight: AppFontWeight.regular2W500,
-                          color: context.watch<GlobalCubit>().isDarkTheme() ? AppColors.white : AppColors.textColor,
+                          color: context.watch<GlobalCubit>().isDarkTheme() ? AppColors.white : AppColors.blackTextColor,
                         ),
                       ),
                       Padding(

@@ -110,7 +110,7 @@ class DrawerItem extends StatelessWidget {
       title:  Text(
         title,
         style: AppTextStyle().w600.bodySmall12.copyWith(
-          color: cubit.isDarkTheme()?Colors.white:AppColors.textColor
+          color: cubit.isDarkTheme()?Colors.white:AppColors.blackTextColor
         )),
       trailing:  Icon(Icons.arrow_forward_ios_rounded,color: cubit.isDarkTheme() ? AppColors.darkStroke : AppColors.primaryColor,),
     );

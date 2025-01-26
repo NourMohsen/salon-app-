@@ -30,7 +30,7 @@ class _DefaultDropDownFormFieldState<T> extends State<DefaultDropDownFormField<T
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(widget.label,style: AppTextStyle().w500.bodyLarge16.copyWith(
-          color: context.watch<GlobalCubit>().isDarkTheme() ? AppColors.white : AppColors.textColor,
+          color: context.watch<GlobalCubit>().isDarkTheme() ? AppColors.white : AppColors.blackTextColor,
         )),
         AppSize.s10.sizedBoxHeight,
         DropdownButtonFormField<T>(

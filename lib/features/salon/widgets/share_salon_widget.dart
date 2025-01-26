@@ -31,7 +31,7 @@ class ShareSalonWidget extends StatelessWidget {
                     child: Text(
                       LocaleKeys.didYouLikeTheSalon.tr(),
                       style: AppTextStyle.bodyMedium14.copyWith(
-                        color: context.watch<GlobalCubit>().isDarkTheme() ? AppColors.white : AppColors.textColor,
+                        color: context.watch<GlobalCubit>().isDarkTheme() ? AppColors.white : AppColors.blackTextColor,
                         fontWeight: FontWeight.w600,
                       ),
                     ),

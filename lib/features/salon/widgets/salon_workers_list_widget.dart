@@ -31,14 +31,14 @@ class SalonWorkersListWidget extends StatelessWidget {
                         Text(
                           workers[index].name ?? "",
                           style:  AppTextStyle().bodyMedium14.copyWith(
-                            color: context.watch<GlobalCubit>().isDarkTheme() ? AppColors.white : AppColors.textColor,
+                            color: context.watch<GlobalCubit>().isDarkTheme() ? AppColors.white : AppColors.blackTextColor,
                             fontWeight: FontWeight.w600,
                           ),
                         ),
                         Text(
                           workers[index].nationality ?? "",
                           style:  AppTextStyle().bodyMedium14.copyWith(
-                            color: context.watch<GlobalCubit>().isDarkTheme() ? AppColors.white : AppColors.textColor,
+                            color: context.watch<GlobalCubit>().isDarkTheme() ? AppColors.white : AppColors.blackTextColor,
                             fontWeight: FontWeight.w600,
                           ),
                         ),

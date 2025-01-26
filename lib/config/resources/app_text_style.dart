@@ -20,7 +20,7 @@ class AppTextStyle {
 
 
   static TextStyle cacheDisplayLarge32(double fontSize) => TextStyle(
-      color: AppColors.textColor,
+      color: AppColors.blackTextColor,
       fontFamily: cairo,
       fontWeight: FontWeight.w700,
       fontSize: fontSize);
@@ -28,7 +28,7 @@ class AppTextStyle {
   static get displayLarge32 => cacheDisplayLarge32(32.responsiveFontSize);
 
   static TextStyle cacheDisplayMedium30(double fontSize) => TextStyle(
-    color: AppColors.textColor,
+    color: AppColors.blackTextColor,
     fontFamily: cairo,
     fontWeight: FontWeight.w700,
     fontSize: fontSize,
@@ -37,7 +37,7 @@ class AppTextStyle {
   static get displayMedium30 => cacheDisplayMedium30(30.responsiveFontSize);
 
   static TextStyle cacheDisplaySmall28(double fontSize) => TextStyle(
-    color: AppColors.textColor,
+    color: AppColors.blackTextColor,
     fontFamily: cairo,
     fontWeight: FontWeight.w700,
     fontSize: fontSize,
@@ -46,7 +46,7 @@ class AppTextStyle {
   static get displaySmall28 => cacheDisplaySmall28(28.responsiveFontSize);
 
   static TextStyle cacheTitleLarge22(double fontSize) => TextStyle(
-    color: AppColors.textColor,
+    color: AppColors.blackTextColor,
     fontFamily: cairo,
     fontWeight: FontWeight.w600,
     fontSize: fontSize,
@@ -55,7 +55,7 @@ class AppTextStyle {
   static get titleLarge22 => cacheTitleLarge22(22.responsiveFontSize);
 
   static TextStyle cacheTitleMedium20(double fontSize) => TextStyle(
-    color: AppColors.textColor,
+    color: AppColors.blackTextColor,
     fontFamily: cairo,
     fontWeight: FontWeight.w600,
     fontSize: fontSize,
@@ -64,7 +64,7 @@ class AppTextStyle {
   static get titleMedium20 => cacheTitleMedium20(20.responsiveFontSize);
 
   static TextStyle cacheTitleSmall18(double fontSize) => TextStyle(
-    color: AppColors.textColor,
+    color: AppColors.blackTextColor,
     fontFamily: cairo,
     fontWeight: FontWeight.w600,
     fontSize: fontSize,
@@ -73,7 +73,7 @@ class AppTextStyle {
   static get titleSmall18 => cacheTitleSmall18(18.responsiveFontSize);
 
   static TextStyle cacheBodyLarge16(double fontSize) => TextStyle(
-    color: AppColors.textColor,
+    color: AppColors.blackTextColor,
     fontFamily: cairo,
     fontWeight: FontWeight.w400,
     fontSize: fontSize,
@@ -82,7 +82,7 @@ class AppTextStyle {
   static get bodyLarge16 => cacheBodyLarge16(16.responsiveFontSize);
 
   static TextStyle cacheBodyMedium14(double fontSize) => TextStyle(
-    color: AppColors.textColor,
+    color: AppColors.blackTextColor,
     fontFamily: cairo,
     fontWeight: FontWeight.w400,
     fontSize: fontSize,
@@ -91,7 +91,7 @@ class AppTextStyle {
   static get bodyMedium14 => cacheBodyMedium14(14.responsiveFontSize);
 
   static TextStyle cacheBodySmall12(double fontSize) => TextStyle(
-    color: AppColors.textColor,
+    color: AppColors.blackTextColor,
     fontFamily: cairo,
     fontWeight: FontWeight.w400,
     fontSize: fontSize,
@@ -109,7 +109,7 @@ class AppTextStyle {
   static get errorTextStyle12 => cacheErrorTextStyle12(12.responsiveFontSize);
 
   static TextStyle cacheHintTextStyle14(double fontSize) => TextStyle(
-    color: AppColors.textColor,
+    color: AppColors.blackTextColor,
     fontFamily: cairo,
     fontWeight: FontWeight.w400,
     fontSize: fontSize,
@@ -140,7 +140,7 @@ extension AppStyleFontFamily on AppTextStyle {
 extension AppStyleColor on AppTextStyle {
   AppTextStyle get red => copyWith(color: AppColors.failColor);
 
-  AppTextStyle get black => copyWith(color: AppColors.textColor);
+  AppTextStyle get black => copyWith(color: AppColors.blackTextColor);
 
   AppTextStyle get white => copyWith(color: AppColors.white);
 

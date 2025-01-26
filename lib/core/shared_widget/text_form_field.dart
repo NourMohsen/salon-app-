@@ -80,7 +80,7 @@ class TextFormFieldWidget extends StatelessWidget {
           Text.rich(TextSpan(
               text: label,
               style: AppTextStyle().w500.bodyLarge16.copyWith(
-                color: context.watch<GlobalCubit>().isDarkTheme() ? AppColors.white : AppColors.textColor,),
+                color: context.watch<GlobalCubit>().isDarkTheme() ? AppColors.white : AppColors.blackTextColor,),
               children: isOptional ? [
                 TextSpan(
                   text: " (${LocaleKeys.optional.tr()})",
@@ -99,7 +99,7 @@ class TextFormFieldWidget extends StatelessWidget {
             maxLines: maxLine,
             validator: validator,
             style: AppTextStyle().bodyLarge16.copyWith(
-              color: context.watch<GlobalCubit>().isDarkTheme() ? AppColors.white : AppColors.textColor,
+              color: context.watch<GlobalCubit>().isDarkTheme() ? AppColors.white : AppColors.blackTextColor,
             ),
             keyboardType: keyboardType,
             cursorColor:  context.watch<GlobalCubit>().isDarkTheme() ? AppColors.white : AppColors.primaryColor,

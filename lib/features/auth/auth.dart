@@ -39,7 +39,7 @@ part 'cubits/auth_cubit/auth_states.dart';
 part 'data/model/city_model.dart';
 part 'data/repository/auth_repository.dart';
 part 'screens/login_screen.dart';
-part 'screens/register_screen.dart';
+part 'screens/complete_register_screen.dart';
 part 'screens/verification_screen.dart';
 part 'widgets/header_widget.dart';
 part 'widgets/select_gender_widget.dart';

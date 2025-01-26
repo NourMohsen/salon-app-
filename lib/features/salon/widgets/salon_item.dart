@@ -46,7 +46,7 @@ class SalonItem extends StatelessWidget {
                    Text(
                        salonModel.name ?? "",
                     style: AppTextStyle().bodyMedium14.copyWith(
-                        color: context.watch<GlobalCubit>().isDarkTheme() ? Colors.white : AppColors.textColor,
+                        color: context.watch<GlobalCubit>().isDarkTheme() ? Colors.white : AppColors.blackTextColor,
                         fontWeight: AppFontWeight.semiBoldW600
                     )
                   ),
@@ -62,7 +62,7 @@ class SalonItem extends StatelessWidget {
                   Text(
                       '${LocaleKeys.includesServices.tr()} (${services()})',
                     style: AppTextStyle().bodySmall12.copyWith(
-                      color: context.watch<GlobalCubit>().isDarkTheme() ? Colors.white : AppColors.textColor,
+                      color: context.watch<GlobalCubit>().isDarkTheme() ? Colors.white : AppColors.blackTextColor,
                       fontSize: AppFontSize.sp10.responsiveFontSize,
                       fontWeight: AppFontWeight.regular2W500,
                     )
@@ -85,7 +85,7 @@ class SalonItem extends StatelessWidget {
                             TextSpan(
                               text: '${salonModel.countRate ?? 0} ',
                               style: AppTextStyle().w500.bodySmall12.copyWith(
-                                color: context.watch<GlobalCubit>().isDarkTheme() ? Colors.white : AppColors.textColor,
+                                color: context.watch<GlobalCubit>().isDarkTheme() ? Colors.white : AppColors.blackTextColor,
                                 fontSize: AppFontSize.sp8.responsiveFontSize,
                               ),
                             ),
